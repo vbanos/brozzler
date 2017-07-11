@@ -447,7 +447,8 @@ class Browser:
                     on_screenshot(jpeg_bytes)
                 behavior_script = brozzler.behavior_script(
                         page_url, behavior_parameters)
-                self.run_behavior(behavior_script, timeout=900)
+                # disabled because it makes web.archive.org/save crash
+                # self.run_behavior(behavior_script, timeout=900)
                 if skip_extract_outlinks:
                     outlinks = []
                 else:
