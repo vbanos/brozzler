@@ -18,6 +18,10 @@
 
 # first matched behavior is used, so order matters here
 -
+  url_regex: '^https?://web\.archive\.org/save/.*$'
+  behavior_js_template: empty.js
+  request_idle_timeout_sec: 0
+-
   url_regex: '^https?://(?:www\.)?facebook\.com/.*$'
   behavior_js_template: facebook.js
   request_idle_timeout_sec: 30
